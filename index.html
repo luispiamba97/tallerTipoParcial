@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TL Tecnologia - Cali</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo"><img src="img/tl.jpg" alt="Logo de la empresa"></div>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#home" class="active" aria-current="page">Inicio</a></li>
+        <li><a href="#about">Nosotros</a></li>
+        <li><a href="#contact">RRSS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main id="main-content" class="container">
+
+   
+<section class="promo-banner-container" aria-label="Sección de promociones">
+  <div class="promo-banner" role="region" aria-live="polite">
+    <h2 class="promo-title">✨ ¡Promociones de la semana! ✨</h2>
+  </div>
+</section>
+
+    <!-- Sección de Tarjetas -->
+    <section class="articles-grid" aria-labelledby="articles-heading">
+      <h2 id="articles-heading" class="visually-hidden">Artículos destacados</h2>
+
+      <article class="article-card">
+        <img src="img/PC1.png" alt="Imagen representativa del artículo 1 con dimensiones 80 por 80" class="article-img">
+        <h3 align="center">Portatil HP 15</h3>
+        <p align="center">Procesador: Intel Celeron<br>Memoria: 8GB DDR4<br>Almacenamiento: 256GB SSD<br>Pantalla: 14"<br><strong>Precio: $1'150.000</strong></p>
+      </article>
+
+      <article class="article-card">
+        <img src="img/PC2.png" alt="Imagen representativa del artículo 2 con dimensiones 80 por 80" class="article-img">
+        <h3 align="center">Portatil Lenovo V14</h3>
+        <p align="center">Procesador: Ryzen 3 7320u<br>Memoria: 16GB DDR5<br>Almacenamiento: 240GB SSD<br>Pantalla: 14"<br><strong>Precio: $1'480.000</strong></p>
+      </article>
+    </section>
+
+    <!--Formulario -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Formulario de Contacto</h2>
+      
+      <form id="contactForm" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="3" required aria-required="true"></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- Tabla -->
+    <section class="scores-section" aria-labelledby="scores-heading">
+        <section class="promo-banner-container" aria-label="Sección de promociones">
+  <div class="promo-banner" role="region" aria-live="polite">
+    <h2 class="promo-title">✨ ¡Promociones hasta 50% en perifericos! ✨</h2>
+  </div>
+</section>
+      <h2 id="scores-heading">Perifericos</h2>
+      
+      <table class="scores-table">
+        <caption>Puntajes y calificaciones obtenidas por los estudiantes en HTML y CSS</caption>
+        <thead>
+          <tr>
+            <th scope="col">Accesorio</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Stock</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Multipuerto USB 3.0</th>
+            <td>Logitech</td>
+            <td>$25.000</td>
+            <td>170</td>
+          </tr>
+          <tr>
+            <th scope="row">Mouse Inalámbrico</th>
+            <td>Logitech</td>
+            <td>$55.000</td>
+            <td>180</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="3" class="text-right">Total</th>
+            <td><strong>350</strong></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>Derechos reservados &copy; 2026 Tienda de Tecnología. <a href="tl.tecnologiacali@gmail.com" aria-label="Enviar correo a tl.tecnologiacali@gmail.com">tl.tecnologiacali@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
